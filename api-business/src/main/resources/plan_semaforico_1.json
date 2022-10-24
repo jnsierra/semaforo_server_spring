@@ -1,0 +1,2463 @@
+{
+    "nombreInterseccion": "Calle 34 Carrera 28",
+    "numeroCentral": "4",
+    "cicloIntersecion": "120",
+    "grpSemaforico": [
+        {
+            "nro": "2",
+            "nombre": "Grupo Semaforico 2",
+            "semaforos": [
+                {
+                    "tipo": "vehicular",
+                    "cantidad": "2"
+                }
+
+            ],
+            "pasos": [
+                {
+                    "color": "R",
+                    "tiempo": "1",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "2",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "3",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "4",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "5",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "6",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "7",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "8",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "9",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "10",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "11",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "12",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "13",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "14",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "15",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "16",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "17",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "18",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "19",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "20",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "21",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "22",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "23",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "24",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "25",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "26",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "27",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "28",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "29",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "30",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "31",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "32",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "33",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "34",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "35",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "36",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "37",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "38",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "39",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "40",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "41",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "42",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "43",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "44",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "45",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "46",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "47",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "48",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "49",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "RA",
+                    "tiempo": "50",
+                    "accion": "01100110"
+                },
+                {
+                    "color": "RA",
+                    "tiempo": "51",
+                    "accion": "01100110"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "52",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "53",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "54",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "55",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "56",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "57",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "58",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "59",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "60",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "61",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "62",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "63",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "64",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "65",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "66",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "67",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "68",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "69",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "70",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "71",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "72",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "73",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "74",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "75",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "76",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "77",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "78",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "79",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "80",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "81",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "82",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "83",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "84",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "85",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "86",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "87",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "88",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "89",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "90",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "91",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "92",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "93",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "94",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "95",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "96",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "97",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "98",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "99",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "100",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "101",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "102",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "103",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "104",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "105",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "106",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "107",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "108",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "109",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "110",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "111",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "V",
+                    "tiempo": "112",
+                    "accion": "00010001"
+                },
+                {
+                    "color": "A",
+                    "tiempo": "113",
+                    "accion": "00100010"
+                },
+                {
+                    "color": "A",
+                    "tiempo": "114",
+                    "accion": "00100010"
+                },
+                {
+                    "color": "A",
+                    "tiempo": "115",
+                    "accion": "00100010"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "116",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "117",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "118",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "119",
+                    "accion": "01000100"
+                },
+                {
+                    "color": "R",
+                    "tiempo": "120",
+                    "accion": "01000100"
+                }
+            ]
+        },
+        {
+            "nro": "4",
+            "nombre": "Grupo Semaforico 4",
+            "semaforos": [
+                {
+                    "tipo": "vehicular",
+                    "cantidad": "2"
+                }
+            ],
+            "pasos": 
+                    [
+                        {
+                            "color": "V",
+                            "tiempo": "1",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "2",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "3",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "4",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "5",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "6",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "7",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "8",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "9",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "10",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "11",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "12",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "13",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "14",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "15",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "16",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "17",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "18",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "19",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "20",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "21",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "22",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "23",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "24",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "25",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "26",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "27",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "28",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "29",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "30",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "31",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "32",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "33",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "34",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "35",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "A",
+                            "tiempo": "36",
+                            "accion": "00100010"
+                        },
+                        {
+                            "color": "A",
+                            "tiempo": "37",
+                            "accion": "00100010"
+                        },
+                        {
+                            "color": "A",
+                            "tiempo": "38",
+                            "accion": "00100010"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "39",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "40",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "41",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "42",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "43",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "44",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "45",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "46",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "47",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "48",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "49",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "50",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "51",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "52",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "53",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "54",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "55",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "56",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "57",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "58",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "59",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "60",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "61",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "62",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "63",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "64",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "65",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "66",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "67",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "68",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "69",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "70",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "71",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "72",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "73",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "74",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "75",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "76",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "77",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "78",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "79",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "80",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "81",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "82",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "83",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "84",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "85",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "86",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "87",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "88",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "89",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "90",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "91",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "92",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "93",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "94",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "95",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "96",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "97",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "98",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "99",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "100",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "101",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "102",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "103",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "104",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "105",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "106",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "107",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "108",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "109",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "110",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "111",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "112",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "113",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "114",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "115",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "116",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "RA",
+                            "tiempo": "117",
+                            "accion": "01100110"
+                        },
+                        {
+                            "color": "RA",
+                            "tiempo": "118",
+                            "accion": "01100110"
+                        },
+                        {
+                            "color": "RA",
+                            "tiempo": "119",
+                            "accion": "01100110"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "120",
+                            "accion": "00010001"
+                        }
+                    ]
+        },
+        {
+            "nro": "91",
+            "nombre": "Grupo Semaforico 91",
+            "semaforos": [
+                {
+                    "tipo": "vehicular",
+                    "cantidad": "2"
+                }
+            ],
+            "pasos": 
+                    [
+                        {
+                            "color": "R",
+                            "tiempo": "1",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "2",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "3",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "4",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "5",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "6",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "7",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "8",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "9",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "10",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "11",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "12",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "13",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "14",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "15",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "16",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "17",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "18",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "19",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "20",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "21",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "22",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "23",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "24",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "25",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "26",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "27",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "28",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "29",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "30",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "31",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "32",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "33",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "34",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "35",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "36",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "37",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "38",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "39",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "RA",
+                            "tiempo": "40",
+                            "accion": "01100110"
+                        },
+                        {
+                            "color": "RA",
+                            "tiempo": "41",
+                            "accion": "01100110"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "42",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "43",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "44",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "45",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "46",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "47",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "A",
+                            "tiempo": "48",
+                            "accion": "00100010"
+                        },
+                        {
+                            "color": "A",
+                            "tiempo": "49",
+                            "accion": "00100010"
+                        },
+                        {
+                            "color": "A",
+                            "tiempo": "50",
+                            "accion": "00100010"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "51",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "52",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "53",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "54",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "55",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "56",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "57",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "58",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "59",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "60",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "61",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "62",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "63",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "64",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "65",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "66",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "67",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "68",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "69",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "70",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "71",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "72",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "73",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "74",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "75",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "76",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "77",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "78",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "79",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "80",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "81",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "82",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "83",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "84",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "85",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "86",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "87",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "88",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "89",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "90",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "91",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "92",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "93",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "94",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "95",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "96",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "97",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "98",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "99",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "100",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "101",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "102",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "103",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "104",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "105",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "106",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "107",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "108",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "109",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "110",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "111",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "112",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "113",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "114",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "115",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "116",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "117",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "118",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "119",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "120",
+                            "accion": "01000100"
+                        }
+                    ]
+        },
+        {
+            "nro": "22",
+            "nombre": "Grupo Semaforico 22",
+            "semaforos": [
+                {
+                    "tipo": "vehicular",
+                    "cantidad": "1"
+                },
+                {
+                    "tipo": "peatonal",
+                    "cantidad": "1"
+                }
+            ],
+            "pasos": 
+                    [
+                        {
+                            "color": "V",
+                            "tiempo": "1",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "2",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "3",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "4",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "5",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "6",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "7",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "8",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "9",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "10",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "11",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "12",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "13",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "14",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "15",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "16",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "17",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "18",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "19",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "20",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "21",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "22",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "23",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "24",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "25",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "26",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "27",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "28",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "VI",
+                            "tiempo": "29",
+                            "accion": "10011001"
+                        },
+                        {
+                            "color": "VI",
+                            "tiempo": "30",
+                            "accion": "10011001"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "31",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "32",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "33",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "34",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "35",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "36",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "37",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "38",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "39",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "40",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "41",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "42",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "43",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "44",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "45",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "46",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "47",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "48",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "49",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "50",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "51",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "52",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "53",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "54",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "55",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "56",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "57",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "58",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "59",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "60",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "61",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "62",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "63",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "64",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "65",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "66",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "67",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "68",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "69",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "70",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "71",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "72",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "73",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "74",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "75",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "76",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "77",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "78",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "79",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "80",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "81",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "82",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "83",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "84",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "85",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "86",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "87",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "88",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "89",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "90",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "91",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "92",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "93",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "94",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "95",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "96",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "97",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "98",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "99",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "100",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "101",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "102",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "103",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "104",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "105",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "106",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "107",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "108",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "109",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "110",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "111",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "112",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "113",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "114",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "R",
+                            "tiempo": "115",
+                            "accion": "01000100"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "116",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "117",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "118",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "119",
+                            "accion": "00010001"
+                        },
+                        {
+                            "color": "V",
+                            "tiempo": "120",
+                            "accion": "00010001"
+                        }
+                    ]
+        }
+    ]
+}
