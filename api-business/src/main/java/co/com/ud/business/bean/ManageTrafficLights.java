@@ -22,4 +22,12 @@ public interface ManageTrafficLights {
     
     EjecucionCicloLogico getEjecucionCicloLogico();
     
+    PlanSemaforicoDto getPlanSemaforicoDto();
+    
+    void setIdInterseccion(Integer id);
+    
+    Integer getIdInterseccion();
+    
+    Optional<Boolean> validaInterseccion(Integer id);
+    
 }

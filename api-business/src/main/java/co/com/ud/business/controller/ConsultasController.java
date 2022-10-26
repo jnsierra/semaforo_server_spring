@@ -1,15 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package co.com.ud.business.controller;
 
 import co.com.ud.business.bean.ConsultaSemaforo;
+import co.com.ud.business.bean.ManageTrafficLights;
+import co.com.ud.business.service.ValidateService;
+import co.com.ud.utiles.dto.InterseccionDto;
+import co.com.ud.utiles.dto.RespuestaMensaje;
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,17 +24,32 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConsultasController {
     
     private ConsultaSemaforo consultaSemaforo;
+    private ManageTrafficLights manageTrafficLights;
+    private ValidateService validateService;
 
     @Autowired
-    public ConsultasController(ConsultaSemaforo consultaSemaforo) {
+    public ConsultasController(ConsultaSemaforo consultaSemaforo
+            , ManageTrafficLights manageTrafficLights
+            , ValidateService validateService) {
         this.consultaSemaforo = consultaSemaforo;
+        this.manageTrafficLights = manageTrafficLights;
+        this.validateService = validateService;
     }
     
-    @GetMapping(value = "/ciclo/")
-    public ResponseEntity<Integer> consultaCiclo(){
+    @GetMapping(value = "/ciclo/{interseccion}/")
+    public ResponseEntity<RespuestaMensaje> consultaCiclo(@PathVariable("interseccion") Integer interseccion){
+        Optional<RespuestaMensaje<Integer>> valida = validateService.validaInterseccion(interseccion);
+        if(valida.isPresent()){
+            return new ResponseEntity<>(valida.get(), HttpStatus.OK);
+        }
         Optional<Integer> response = consultaSemaforo.consultaCicloActual();
         if(response.isPresent()){
-            return new ResponseEntity<>(response.get(), HttpStatus.OK);
+            RespuestaMensaje<Integer> respuesta = RespuestaMensaje.<Integer>builder()
+                    .code(1)
+                    .mensaje("Ok")
+                    .respuesta(response.get())
+                    .build();
+            return new ResponseEntity<>(respuesta, HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
@@ -44,5 +61,14 @@ public class ConsultasController {
             return new ResponseEntity<>(response.get(), HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    }    
+    }
+    
+    @GetMapping(value = "/interseccion/")
+    public ResponseEntity<List<InterseccionDto>> getIntersecciones(){
+        Optional<List<InterseccionDto>> response = consultaSemaforo.getListIntersecciones();
+        if(response.isPresent()){
+            return new ResponseEntity<>(response.get(), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }

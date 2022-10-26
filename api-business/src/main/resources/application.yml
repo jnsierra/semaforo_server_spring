@@ -1,2 +1,6 @@
+server:
+  servlet:
+    context-path: /api-business
+  port: 5001
 configuration:
     puerto: 1234

@@ -1,9 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package co.com.ud.business.bean;
 
+import co.com.ud.utiles.dto.InterseccionDto;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -15,5 +13,7 @@ public interface ConsultaSemaforo {
     Optional<Integer> consultaCicloActual();
     
     Optional<Integer> consultaSegundoActual();
+    
+    Optional<List<InterseccionDto>> getListIntersecciones();
     
 }

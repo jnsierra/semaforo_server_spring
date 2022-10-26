@@ -23,11 +23,14 @@ public class ManageTrafficLightsImpl implements ManageTrafficLights{
     private EnvioMensajesLogica envioMensajesLogica;
     @Getter
     private EjecucionCicloLogico ejecucionCicloLogico;
+    @Getter @Setter
+    private Integer idInterseccion;
 
     
     public ManageTrafficLightsImpl(ServerSemaforo serverSemaforo, EnvioMensajesLogica envioMensajesLogica) {
         this.serverSemaforo = serverSemaforo;
         this.envioMensajesLogica = envioMensajesLogica;
+        this.idInterseccion = -1;
     }
     
     
@@ -51,5 +54,17 @@ public class ManageTrafficLightsImpl implements ManageTrafficLights{
             return Optional.of("No existen las conexiones necesarias para iniciar");
         }
         return Optional.of("No se a cargado el plan a ejecutar");
-    }   
+    }
+    
+    public Optional<Boolean> validaInterseccion(Integer id){
+        if(Integer.valueOf("-1").equals(this.idInterseccion)){
+            return Optional.empty();
+        }
+        //Indica que server esta siendo usado
+        if(id.equals(idInterseccion)){
+            return Optional.of(Boolean.TRUE);
+        }else {
+            return Optional.of(Boolean.FALSE);
+        }
+    }
 }

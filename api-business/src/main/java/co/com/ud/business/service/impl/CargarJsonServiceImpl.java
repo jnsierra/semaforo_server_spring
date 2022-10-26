@@ -20,6 +20,7 @@ public class CargarJsonServiceImpl implements CargarJsonService{
     private ManageTrafficLights manageTrafficLights;
     private ObjectMapper objectMapper;
     
+    
     @Autowired
     public CargarJsonServiceImpl(ManageTrafficLights manageTrafficLights,
             ObjectMapper objectMapper) {
@@ -32,6 +33,7 @@ public class CargarJsonServiceImpl implements CargarJsonService{
         try {
             PlanSemaforicoDto planSemaforicoDto = objectMapper.readValue(new File(interseccionToPathJsonFile(interseccion)), PlanSemaforicoDto.class);
             manageTrafficLights.setPlanSemaforicoDto(planSemaforicoDto);
+            manageTrafficLights.setIdInterseccion(Integer.valueOf(interseccion));
         } catch (IOException ex) {
             ex.printStackTrace();
             return Optional.of(Boolean.FALSE);
