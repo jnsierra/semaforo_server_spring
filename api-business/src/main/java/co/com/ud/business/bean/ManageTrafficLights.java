@@ -30,4 +30,6 @@ public interface ManageTrafficLights {
     
     Optional<Boolean> validaInterseccion(Integer id);
     
+    Optional<Integer> obtenerNumeroConexionesCliente();
+    
 }

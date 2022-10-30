@@ -71,4 +71,17 @@ public class ConsultasController {
         }
         return new ResponseEntity<>(HttpStatus.OK);
     }
+    
+    @GetMapping(value = "/numclientsconnect/")
+    public ResponseEntity<RespuestaMensaje<Integer>> getClientConnect(){
+        Optional<Integer> response = this.manageTrafficLights.obtenerNumeroConexionesCliente();
+        if(response.isPresent()){
+            return new ResponseEntity<>(RespuestaMensaje.<Integer>builder()
+                    .code(1)
+                    .mensaje("OK")
+                    .respuesta(response.get())
+                    .build(),  HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }

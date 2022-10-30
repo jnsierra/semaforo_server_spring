@@ -5,6 +5,7 @@ import co.com.ud.utiles.dto.PlanSemaforicoDto;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Objects;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -63,5 +64,12 @@ public class ServerSemaforo extends Thread{
                 log.error("Error al cerrar el servidor: " + ex.getMessage());
             }
         }
+    }
+    
+    public Integer obtenerNumeroConexiones(){
+        if(Objects.isNull(this.envioMensajesLogica.getCentralesSemaforicas())){
+            return 0;
+        }
+        return this.envioMensajesLogica.getCentralesSemaforicas().size();
     }
 }

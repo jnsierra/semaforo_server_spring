@@ -67,4 +67,12 @@ public class ManageTrafficLightsImpl implements ManageTrafficLights{
             return Optional.of(Boolean.FALSE);
         }
     }
+
+    @Override
+    public Optional<Integer> obtenerNumeroConexionesCliente() {
+        if(Objects.nonNull(serverSemaforo)){
+            return Optional.of(serverSemaforo.obtenerNumeroConexiones());
+        }
+        return Optional.empty();
+    }
 }
