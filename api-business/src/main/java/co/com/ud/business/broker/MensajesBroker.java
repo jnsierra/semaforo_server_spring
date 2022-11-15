@@ -2,18 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package co.com.ud.business.service;
+package co.com.ud.business.broker;
 
 import java.util.Optional;
 
 /**
  *
- * @author sierraj
+ * @author Usuario
  */
-public interface CargarJsonService {
+public interface MensajesBroker {
+    Optional<Boolean> mensaje(String msn); 
     
-    Optional<Boolean> cargoJson();
-    
-    Optional<Boolean> cargarJsonSistema(Integer interseccion);
-    
+    void iniciarHilo();
 }

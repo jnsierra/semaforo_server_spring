@@ -30,8 +30,17 @@ public class SemaforoController {
     }
     
     @PostMapping(value = "/{interseccion}/")
-    public ResponseEntity<Boolean> cargarDocumentos(@PathVariable("interseccion") String interseccion){
-        Optional<Boolean> response = cargarJsonService.cargoJson(interseccion);
+    public ResponseEntity<Boolean> cargarDocumentos(@PathVariable("interseccion") Integer interseccion){
+        Optional<Boolean> response = cargarJsonService.cargoJson();
+        if(response.isPresent()){
+            return new ResponseEntity<>(response.get() ,HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    
+    @PostMapping(value = "/cargar/{interseccion}/")
+    public ResponseEntity<Boolean> cargarInterseccionSistema(@PathVariable("interseccion") Integer interseccion){
+        Optional<Boolean> response = cargarJsonService.cargarJsonSistema(interseccion);
         if(response.isPresent()){
             return new ResponseEntity<>(response.get() ,HttpStatus.OK);
         }

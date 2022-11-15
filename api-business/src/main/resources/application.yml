@@ -3,4 +3,8 @@ server:
     context-path: /api-business
   port: 5001
 configuration:
-    puerto: 1234
+    puerto: 1234    
+broker:
+    connection:
+        ip: localhost
+        port: 5005

@@ -4,7 +4,10 @@ import co.com.ud.business.bean.ManageTrafficLights;
 import co.com.ud.business.bean.impl.EnvioMensajesLogica;
 import co.com.ud.business.bean.impl.ManageTrafficLightsImpl;
 import co.com.ud.business.bean.impl.ServerSemaforo;
+import co.com.ud.business.broker.impl.SocketClienteBroker;
+import co.com.ud.business.service.CargarJsonService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +20,13 @@ import org.springframework.context.annotation.Scope;
  */
 @Configuration
 public class ObjectConfig {
+    
+    @Value("${broker.connection.ip}")
+    private String ipBroker;
+    @Value("${broker.connection.port}")
+    private Integer puertoBroker;
+    @Autowired
+    private CargarJsonService cargarJsonService;
     
     @Bean
     @Scope("singleton")
@@ -41,6 +51,12 @@ public class ObjectConfig {
     public ServerSemaforo getServerSemaforo(@Value("${configuration.puerto}") int puerto,
             @Qualifier("envioMsn") EnvioMensajesLogica envioMensajesLogica){
         return new ServerSemaforo(puerto, envioMensajesLogica);
+    }
+    
+    @Bean("socketClienteBroker")
+    @Scope("singleton")
+    public SocketClienteBroker getSocketClienteBroker(){
+        return new SocketClienteBroker(ipBroker, puertoBroker, this.cargarJsonService);
     }
     
 }
