@@ -20,6 +20,7 @@ public class ManageTrafficLightsImpl implements ManageTrafficLights{
     @Getter @Setter
     private PlanSemaforicoDto planSemaforicoDto;    
     private ServerSemaforo serverSemaforo;
+    @Getter
     private EnvioMensajesLogica envioMensajesLogica;
     @Getter
     private EjecucionCicloLogico ejecucionCicloLogico;

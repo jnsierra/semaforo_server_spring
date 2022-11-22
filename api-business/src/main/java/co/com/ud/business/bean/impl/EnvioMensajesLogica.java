@@ -15,26 +15,26 @@ public class EnvioMensajesLogica {
 
     @Getter
     private List<ConexionClienteSemaforo> centralesSemaforicas;
-    
+
     public EnvioMensajesLogica() {
         this.centralesSemaforicas = new ArrayList<>();
     }
-    
-    public void adicionarConexion(ConexionClienteSemaforo cc){
+
+    public void adicionarConexion(ConexionClienteSemaforo cc) {
         centralesSemaforicas.add(cc);
     }
-    
-    public Optional<Boolean> enviarMensaje(Integer idCliente, String mensaje){
-    if(Objects.nonNull(getCentralesSemaforicas()) && !centralesSemaforicas.isEmpty()){
+
+    public Optional<Boolean> enviarMensaje(Integer idCliente, String mensaje) {
+        if (Objects.nonNull(getCentralesSemaforicas()) && !centralesSemaforicas.isEmpty()) {
             List<ConexionClienteSemaforo> semaforo = centralesSemaforicas.stream().parallel()
-                    .filter( item -> idCliente.equals(item.getIdCliente()) )                    
+                    .filter(item -> idCliente.equals(item.getIdCliente()))
                     .collect(Collectors.toList());
-            if(Objects.nonNull(semaforo) && !semaforo.isEmpty()){
+            if (Objects.nonNull(semaforo) && !semaforo.isEmpty()) {
                 semaforo.forEach(item -> item.enviarMSN(mensaje));
                 return Optional.of(Boolean.TRUE);
             }
             return Optional.of(Boolean.FALSE);
         }
         return Optional.empty();
-    }   
+    }
 }

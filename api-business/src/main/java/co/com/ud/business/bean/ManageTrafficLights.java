@@ -5,6 +5,7 @@
 package co.com.ud.business.bean;
 
 import co.com.ud.business.bean.impl.EjecucionCicloLogico;
+import co.com.ud.business.bean.impl.EnvioMensajesLogica;
 import co.com.ud.utiles.dto.PlanSemaforicoDto;
 import java.util.Optional;
 
@@ -31,5 +32,7 @@ public interface ManageTrafficLights {
     Optional<Boolean> validaInterseccion(Integer id);
     
     Optional<Integer> obtenerNumeroConexionesCliente();
+    
+    EnvioMensajesLogica getEnvioMensajesLogica();
     
 }

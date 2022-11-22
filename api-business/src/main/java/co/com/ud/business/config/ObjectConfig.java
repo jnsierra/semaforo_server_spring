@@ -6,8 +6,8 @@ import co.com.ud.business.bean.impl.ManageTrafficLightsImpl;
 import co.com.ud.business.bean.impl.ServerSemaforo;
 import co.com.ud.business.broker.impl.SocketClienteBroker;
 import co.com.ud.business.service.CargarJsonService;
+import co.com.ud.business.service.impl.ConsultaGrupoSemServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -25,8 +25,7 @@ public class ObjectConfig {
     private String ipBroker;
     @Value("${broker.connection.port}")
     private Integer puertoBroker;
-    @Autowired
-    private CargarJsonService cargarJsonService;
+    
     
     @Bean
     @Scope("singleton")
@@ -55,8 +54,11 @@ public class ObjectConfig {
     
     @Bean("socketClienteBroker")
     @Scope("singleton")
-    public SocketClienteBroker getSocketClienteBroker(){
-        return new SocketClienteBroker(ipBroker, puertoBroker, this.cargarJsonService);
+    public SocketClienteBroker getSocketClienteBroker(CargarJsonService cargarJsonService
+    , ManageTrafficLights manageTrafficLights
+    , ObjectMapper objectMapper
+    , ConsultaGrupoSemServiceImpl consultaGrupoSemServiceImpl){
+        return new SocketClienteBroker(ipBroker, puertoBroker, cargarJsonService, manageTrafficLights, objectMapper, consultaGrupoSemServiceImpl);
     }
     
 }
