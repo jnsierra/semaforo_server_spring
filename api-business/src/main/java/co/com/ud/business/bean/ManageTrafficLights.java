@@ -35,4 +35,6 @@ public interface ManageTrafficLights {
     
     EnvioMensajesLogica getEnvioMensajesLogica();
     
+    Optional<Integer> getTiempoEjecucion();
+    
 }

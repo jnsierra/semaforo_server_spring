@@ -14,5 +14,11 @@ import java.util.Optional;
 public interface ConsultaGrupoSemService {
 
     Optional<String> sendEstadoGrupoSemaforico(MensajeBrokerDto mensajeBrokerDto);
+    
+    Optional<String> sendNumConexionesGrupoSemaforico(MensajeBrokerDto mensajeBrokerDto);
+    
+    Optional<String> sendTiempoEjecucionGrupoSemaforico(MensajeBrokerDto mensajeBrokerDto);
+    
+    Optional<String> ejecutarGrpSemaforico(MensajeBrokerDto mensajeBrokerDto);
 
 }

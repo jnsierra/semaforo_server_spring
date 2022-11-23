@@ -120,6 +120,44 @@ public class SocketClienteBroker extends Thread {
                     } catch (JsonProcessingException ex) {
                         Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
                     }
+                }else if("MSNCONSULTANUMCON".equalsIgnoreCase(parts[0])){
+                    log.info("Este es el mensaje enviado numero conexiones {} ", parts[1]);
+                    try {
+                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
+                        log.info(mensaje.toString()); 
+                        Optional<String> mensajeRta = consultaGrupoSemService.sendNumConexionesGrupoSemaforico(mensaje);
+                        if(mensajeRta.isPresent()){
+                            this.enviarMSNBroker(mensajeRta.get());
+                        }
+                    } catch (JsonProcessingException ex) {
+                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    
+                }else if("MSNCONSULTATIEMEJECUCION".equalsIgnoreCase(parts[0])){
+                    log.info("Este es el mensaje enviado para el tiempo de ejecucion {} ", parts[1]);
+                    try {
+                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
+                        log.info(mensaje.toString()); 
+                        Optional<String> mensajeRta = consultaGrupoSemService.sendTiempoEjecucionGrupoSemaforico(mensaje);
+                        if(mensajeRta.isPresent()){
+                            this.enviarMSNBroker(mensajeRta.get());
+                        }
+                    } catch (JsonProcessingException ex) {
+                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    
+                }else if("MSNEJECUTARGRPSEMAFORICO".equalsIgnoreCase(parts[0])){
+                    log.info("Este es el mensaje enviado para el tiempo de ejecucion {} ", parts[1]);
+                    try {
+                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
+                        log.info(mensaje.toString()); 
+                        Optional<String> mensajeRta = consultaGrupoSemService.ejecutarGrpSemaforico(mensaje);
+                        if(mensajeRta.isPresent()){
+                            this.enviarMSNBroker(mensajeRta.get());
+                        }
+                    } catch (JsonProcessingException ex) {
+                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
             }
         }

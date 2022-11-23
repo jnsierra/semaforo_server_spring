@@ -51,6 +51,7 @@ public class ManageTrafficLightsImpl implements ManageTrafficLights{
             if(ejecucionCicloLogico.validateConnections()){
                 ejecucionCicloLogico.setContinuar(Boolean.TRUE);
                 ejecucionCicloLogico.start();
+                return Optional.of("Ok");
             }
             return Optional.of("No existen las conexiones necesarias para iniciar");
         }
@@ -75,5 +76,13 @@ public class ManageTrafficLightsImpl implements ManageTrafficLights{
             return Optional.of(serverSemaforo.obtenerNumeroConexiones());
         }
         return Optional.empty();
+    }
+
+    @Override
+    public Optional<Integer> getTiempoEjecucion() {
+        if(Objects.nonNull(this.ejecucionCicloLogico)){
+            return Optional.of(ejecucionCicloLogico.getIterador());
+        }
+        return Optional.of(0);
     }
 }

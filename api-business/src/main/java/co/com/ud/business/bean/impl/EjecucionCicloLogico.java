@@ -30,6 +30,7 @@ public class EjecucionCicloLogico extends Thread {
         this.ciclo = 1;
         this.envioMsn = envioMsn;
         this.planSemaforicoDto = planSemeforicoDto;
+        this.iterador = 0;
     }
 
     @Override
