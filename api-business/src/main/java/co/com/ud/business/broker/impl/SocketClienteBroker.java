@@ -4,13 +4,10 @@ import co.com.ud.business.bean.ManageTrafficLights;
 import co.com.ud.business.service.CargarJsonService;
 import co.com.ud.business.service.ConsultaGrupoSemService;
 import co.com.ud.utiles.dto.MensajeBrokerDto;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -92,8 +89,9 @@ public class SocketClienteBroker extends Thread {
                 Optional<MensajeBrokerDto> mensaje = manageInMsnBrokerImpl.generateMsn(manageInMsnBrokerImpl.extracItemString(1, msn));
                 if(mensaje.isPresent()){
                     this.ejecutaAccion(mensaje.get());
+                }else{
+                    log.info("Mensaje no valido: {} ", msn);
                 }
-                log.info("Mensaje no valido: {} ", msn);
             }
         }
         log.info("Mensaje: ( {} ), no identificado.", msn);
