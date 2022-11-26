@@ -73,6 +73,7 @@ public class ConexionClienteSemaforo extends Thread {
         try {
             // Envia el mensaje al cliente
             salidaDatos.writeUTF(mensaje);
+            salidaDatos.flush();
         } catch (IOException ex) {
             log.error("Error al enviar mensaje al cliente (" + ex.getMessage() + ").");
         }

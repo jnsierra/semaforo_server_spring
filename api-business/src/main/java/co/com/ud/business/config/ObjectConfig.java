@@ -58,7 +58,7 @@ public class ObjectConfig {
     , ManageTrafficLights manageTrafficLights
     , ObjectMapper objectMapper
     , ConsultaGrupoSemServiceImpl consultaGrupoSemServiceImpl){
-        return new SocketClienteBroker(ipBroker, puertoBroker, cargarJsonService, manageTrafficLights, objectMapper, consultaGrupoSemServiceImpl);
+        return new SocketClienteBroker(ipBroker, puertoBroker, cargarJsonService, manageTrafficLights, consultaGrupoSemServiceImpl);
     }
     
 }

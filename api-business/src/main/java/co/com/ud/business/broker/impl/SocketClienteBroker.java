@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package co.com.ud.business.broker.impl;
 
 import co.com.ud.business.bean.ManageTrafficLights;
@@ -34,28 +30,27 @@ public class SocketClienteBroker extends Thread {
     private int puerto;
     private DataInputStream entradaDatos = null;
     private DataOutputStream salidaDatos;
-    
+
     @Getter
     @Setter
     private Integer idCentral;
-    
+
     private CargarJsonService cargarJsonService;
     private ManageTrafficLights manageTrafficLights;
-    
-    private ObjectMapper objectMapper;
-    
     private ConsultaGrupoSemService consultaGrupoSemService;
-    
-    public SocketClienteBroker(String ip, int puerto, CargarJsonService cargarJsonService
-    , ManageTrafficLights manageTrafficLights
-    , ObjectMapper objectMapper
-    , ConsultaGrupoSemService consultaGrupoSemService) {
+    private ManageInMsnBrokerImpl manageInMsnBrokerImpl;
+
+    public SocketClienteBroker(String ip, 
+            int puerto, 
+            CargarJsonService cargarJsonService,
+            ManageTrafficLights manageTrafficLights,
+            ConsultaGrupoSemService consultaGrupoSemService) {
         this.ip = ip;
         this.puerto = puerto;
         this.cargarJsonService = cargarJsonService;
         this.manageTrafficLights = manageTrafficLights;
-        this.objectMapper = objectMapper;
         this.consultaGrupoSemService = consultaGrupoSemService;
+        this.manageInMsnBrokerImpl = new ManageInMsnBrokerImpl();
         this.connectServer();
     }
 
@@ -78,7 +73,7 @@ public class SocketClienteBroker extends Thread {
             try {
                 mensaje = entradaDatos.readUTF();
                 log.info("Este es el mensaje de entrada: {}", mensaje);
-                this.interpretaMSN(mensaje);
+                this.manageMsn(mensaje);
                 log.info("Esta es la iteracion: {} ", i);
             } catch (IOException ex) {
                 log.error(null, ex);
@@ -87,90 +82,76 @@ public class SocketClienteBroker extends Thread {
         }
     }
 
-    public void interpretaMSN(String msn) {
-        if (Objects.nonNull(msn)) {
-            log.info("Mensaje enviado: {}", msn);
-            String[] parts = msn.split("\\|");
-            if (parts.length > 0) {
-                if ("MSNSISTEMA".equalsIgnoreCase(parts[0])) {
-                    //Ejecutamos la accion del sistema
-                    if ("ID".equalsIgnoreCase(parts[1])) {
-                        this.setIdCentral(Integer.parseInt(parts[2]));
-                        Optional<Boolean> response = cargarJsonService.cargoJson();
-                        log.info("Esta es la respuesta al cargar Json: {}", response.isPresent() ? response.get().toString() : "Error al cargar json");
-                        if (response.isPresent()) {
-                            response = cargarJsonService.cargarJsonSistema(this.getIdCentral());
-                            log.info("Esta es la respuesta al cargar Json Especifico: {}", response.isPresent() ? response.get().toString() : "Error al cargar json");
-                            if(response.isPresent()){
-                                response = manageTrafficLights.arrancaHilos();
-                                log.info("Esta es la respuesta al arrancar los hilos: {}", response.isPresent() ? response.get().toString() : "Error al cargar json");
-                                log.info("Este es el id {}", this.idCentral);
-                            }
-                        }
-                    }
-                }else if("MSNCONSULTAESTADO".equalsIgnoreCase(parts[0])){
-                    log.info("Este es el mensaje enviado {} ", parts[1]);
-                    try {
-                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
-                        log.info(mensaje.toString()); 
-                        Optional<String> mensajeRta = consultaGrupoSemService.sendEstadoGrupoSemaforico(mensaje);
-                        if(mensajeRta.isPresent()){
-                            this.enviarMSNBroker(mensajeRta.get());
-                        }
-                    } catch (JsonProcessingException ex) {
-                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                }else if("MSNCONSULTANUMCON".equalsIgnoreCase(parts[0])){
-                    log.info("Este es el mensaje enviado numero conexiones {} ", parts[1]);
-                    try {
-                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
-                        log.info(mensaje.toString()); 
-                        Optional<String> mensajeRta = consultaGrupoSemService.sendNumConexionesGrupoSemaforico(mensaje);
-                        if(mensajeRta.isPresent()){
-                            this.enviarMSNBroker(mensajeRta.get());
-                        }
-                    } catch (JsonProcessingException ex) {
-                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                    
-                }else if("MSNCONSULTATIEMEJECUCION".equalsIgnoreCase(parts[0])){
-                    log.info("Este es el mensaje enviado para el tiempo de ejecucion {} ", parts[1]);
-                    try {
-                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
-                        log.info(mensaje.toString()); 
-                        Optional<String> mensajeRta = consultaGrupoSemService.sendTiempoEjecucionGrupoSemaforico(mensaje);
-                        if(mensajeRta.isPresent()){
-                            this.enviarMSNBroker(mensajeRta.get());
-                        }
-                    } catch (JsonProcessingException ex) {
-                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                    
-                }else if("MSNEJECUTARGRPSEMAFORICO".equalsIgnoreCase(parts[0])){
-                    log.info("Este es el mensaje enviado para el tiempo de ejecucion {} ", parts[1]);
-                    try {
-                        MensajeBrokerDto mensaje = this.objectMapper.readValue(parts[1], MensajeBrokerDto.class);
-                        log.info(mensaje.toString()); 
-                        Optional<String> mensajeRta = consultaGrupoSemService.ejecutarGrpSemaforico(mensaje);
-                        if(mensajeRta.isPresent()){
-                            this.enviarMSNBroker(mensajeRta.get());
-                        }
-                    } catch (JsonProcessingException ex) {
-                        Logger.getLogger(SocketClienteBroker.class.getName()).log(Level.SEVERE, null, ex);
-                    }
+    public void manageMsn(String msn) {
+        Optional<String> tipo = manageInMsnBrokerImpl.tipoMsn(msn);
+        if (tipo.isPresent()) {
+            if ("SISTEMA".equalsIgnoreCase(tipo.get())) {
+                this.ejecutarInicioSistema(msn);
+            } else if ("CONSULTA".equalsIgnoreCase(tipo.get())) {
+                //Obtenemos el mensaje enviado
+                Optional<MensajeBrokerDto> mensaje = manageInMsnBrokerImpl.generateMsn(manageInMsnBrokerImpl.extracItemString(1, msn));
+                if(mensaje.isPresent()){
+                    this.ejecutaAccion(mensaje.get());
+                }
+                log.info("Mensaje no valido: {} ", msn);
+            }
+        }
+        log.info("Mensaje: ( {} ), no identificado.", msn);
+    }
+
+    public void ejecutarInicioSistema(String msn) {
+        if ("ID".equalsIgnoreCase(manageInMsnBrokerImpl.extracItemString(1, msn))) {
+            //Seteamos el Id del grupo semaforico
+            this.setIdCentral(Integer.valueOf(manageInMsnBrokerImpl.extracItemString(2, msn)));
+            //Cargamos el Json con el plan a ejecutar
+            Optional<Boolean> response = cargarJsonService.cargoJson();
+            log.info("Esta es la respuesta al cargar Json: {}", response.isPresent() ? response.get().toString() : "Error al cargar json");
+            if (response.isPresent()) {
+                response = cargarJsonService.cargarJsonSistema(this.getIdCentral());
+                log.info("Esta es la respuesta al cargar Json Especifico: {}", response.isPresent() ? response.get().toString() : "Error al cargar json");
+                if (response.isPresent()) {
+                    response = manageTrafficLights.arrancaHilos();
+                    log.info("Esta es la respuesta al arrancar los hilos: {}", response.isPresent() ? response.get().toString() : "Error al cargar json");
+                    log.info("Este es el id {}", this.idCentral);
                 }
             }
         }
     }
     
-    public void enviarMSNBroker(String mensaje){
+    public void ejecutaAccion(MensajeBrokerDto msn){
+        Optional<String> mensajeRta = Optional.empty();
+        switch (msn.getMensaje()) {
+            case "MSNCONSULTAESTADO":
+                mensajeRta = consultaGrupoSemService.sendEstadoGrupoSemaforico(msn);
+                break;
+            case "MSNCONSULTANUMCON":
+                mensajeRta = consultaGrupoSemService.sendNumConexionesGrupoSemaforico(msn);
+                break;
+            case "MSNCONSULTATIEMEJECUCION":
+                mensajeRta = consultaGrupoSemService.sendTiempoEjecucionGrupoSemaforico(msn);
+                break;
+            case "MSNEJECUTARGRPSEMAFORICO":
+                mensajeRta = consultaGrupoSemService.ejecutarGrpSemaforico(msn);
+                break;
+            default:
+                throw new AssertionError();
+        }
+        if (mensajeRta.isPresent()) {
+            this.enviarMSNBroker(mensajeRta.get());
+            return ;
+        }
+        log.info("No fue posible ejecutar la accion: {}", msn.toString());
+    }
+
+    public void enviarMSNBroker(String mensaje) {
         try {
+            log.info("Se envia el siguiente msn: {} ", mensaje);
             // Envia el mensaje al cliente
             salidaDatos.writeUTF(mensaje);
+            salidaDatos.flush();
+            log.info("*******************************");
         } catch (IOException ex) {
             log.error("Error al enviar mensaje al cliente (" + ex.getMessage() + ").");
         }
     }
-    
-    
 }
