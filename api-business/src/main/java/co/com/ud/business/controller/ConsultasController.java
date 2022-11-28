@@ -7,6 +7,7 @@ import co.com.ud.utiles.dto.InterseccionDto;
 import co.com.ud.utiles.dto.RespuestaMensaje;
 import java.util.List;
 import java.util.Optional;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author sierraj
  */
+@Slf4j
 @RestController
 @RequestMapping("/v.1/consultaSemaforo")
 public class ConsultasController {
@@ -83,5 +85,16 @@ public class ConsultasController {
                     .build(),  HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    
+    @GetMapping(value = "/tiempo/")
+    public ResponseEntity<RespuestaMensaje<Integer>> getTiempo(){
+        int time = this.manageTrafficLights.getTiempoEjecucion().get();
+        log.info("Llego al tiempo: {} ", time);
+        return new ResponseEntity<>(RespuestaMensaje.<Integer>builder()
+                .respuesta(time)
+                .mensaje("Ok")
+                .code(200)
+        .build(), HttpStatus.OK);
     }
 }

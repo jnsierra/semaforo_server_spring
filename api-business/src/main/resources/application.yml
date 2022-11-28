@@ -8,3 +8,6 @@ broker:
     connection:
         ip: localhost
         port: 5005
+logging:
+    file:
+        path: /opt/repository/log/semaforo_server_spring

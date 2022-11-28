@@ -69,9 +69,9 @@ public class SocketClienteBroker extends Thread {
         while (true) {
             try {
                 mensaje = entradaDatos.readUTF();
+                log.info("********************************************");
                 log.info("Este es el mensaje de entrada: {}", mensaje);
                 this.manageMsn(mensaje);
-                log.info("Esta es la iteracion: {} ", i);
             } catch (IOException ex) {
                 log.error(null, ex);
             }
@@ -88,6 +88,7 @@ public class SocketClienteBroker extends Thread {
                 //Obtenemos el mensaje enviado
                 Optional<MensajeBrokerDto> mensaje = manageInMsnBrokerImpl.generateMsn(manageInMsnBrokerImpl.extracItemString(1, msn));
                 if(mensaje.isPresent()){
+                    log.info("Mensaje con el id transaccion: {}", mensaje.get().getIdTransaccion());
                     this.ejecutaAccion(mensaje.get());
                 }else{
                     log.info("Mensaje no valido: {} ", msn);
@@ -152,4 +153,5 @@ public class SocketClienteBroker extends Thread {
             log.error("Error al enviar mensaje al cliente (" + ex.getMessage() + ").");
         }
     }
+    
 }
