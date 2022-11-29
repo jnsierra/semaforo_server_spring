@@ -5,6 +5,7 @@
 package co.com.ud.business.service;
 
 import co.com.ud.utiles.dto.MensajeBrokerDto;
+import co.com.ud.utiles.enumeration.EstadoGrupoSemaforicoEnum;
 import java.util.Optional;
 
 /**
@@ -20,5 +21,7 @@ public interface ConsultaGrupoSemService {
     Optional<String> sendTiempoEjecucionGrupoSemaforico(MensajeBrokerDto mensajeBrokerDto);
     
     Optional<String> ejecutarGrpSemaforico(MensajeBrokerDto mensajeBrokerDto);
+    
+    EstadoGrupoSemaforicoEnum getEstadoSemaforico();
 
 }

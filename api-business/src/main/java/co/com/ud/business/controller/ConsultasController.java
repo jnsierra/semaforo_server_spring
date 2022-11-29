@@ -2,6 +2,7 @@ package co.com.ud.business.controller;
 
 import co.com.ud.business.bean.ConsultaSemaforo;
 import co.com.ud.business.bean.ManageTrafficLights;
+import co.com.ud.business.service.ConsultaGrupoSemService;
 import co.com.ud.business.service.ValidateService;
 import co.com.ud.utiles.dto.InterseccionDto;
 import co.com.ud.utiles.dto.RespuestaMensaje;
@@ -28,14 +29,17 @@ public class ConsultasController {
     private ConsultaSemaforo consultaSemaforo;
     private ManageTrafficLights manageTrafficLights;
     private ValidateService validateService;
-
+    private ConsultaGrupoSemService consultaGrupoSemService;
+    
     @Autowired
     public ConsultasController(ConsultaSemaforo consultaSemaforo
             , ManageTrafficLights manageTrafficLights
-            , ValidateService validateService) {
+            , ValidateService validateService
+            , ConsultaGrupoSemService consultaGrupoSemService) {
         this.consultaSemaforo = consultaSemaforo;
         this.manageTrafficLights = manageTrafficLights;
         this.validateService = validateService;
+        this.consultaGrupoSemService = consultaGrupoSemService;
     }
     
     @GetMapping(value = "/ciclo/{interseccion}/")
@@ -97,4 +101,16 @@ public class ConsultasController {
                 .code(200)
         .build(), HttpStatus.OK);
     }
+    
+    @GetMapping(value = "/estado/")
+    public ResponseEntity<RespuestaMensaje<String>> getEstado(){
+        String estado = this.consultaGrupoSemService.getEstadoSemaforico().toString();
+        log.info("Llego el estado: {} ", estado);
+        return new ResponseEntity<>(RespuestaMensaje.<String>builder()
+                .respuesta(estado)
+                .mensaje("Ok")
+                .code(200)
+        .build(), HttpStatus.OK);
+    }
+    
 }

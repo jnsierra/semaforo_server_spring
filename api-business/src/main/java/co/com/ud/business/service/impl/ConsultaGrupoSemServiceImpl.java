@@ -35,8 +35,23 @@ public class ConsultaGrupoSemServiceImpl implements ConsultaGrupoSemService {
     @Override
     public Optional<String> sendEstadoGrupoSemaforico(MensajeBrokerDto mensajeBrokerDto) {
         try {
-            EstadoGrupoSemaforicoEnum estado = null;
-            int numConexiones = getConexionesActivas();
+            EstadoGrupoSemaforicoEnum estado = this.getEstadoSemaforico();            
+            Optional<MensajeBrokerDto> respuesta = Optional.of( MensajeBrokerDto.builder()
+                    .idInterseccion(mensajeBrokerDto.getIdInterseccion())
+                    .idTransaccion(mensajeBrokerDto.getIdTransaccion())
+                    .mensaje(estado.toString())
+                    .build() );
+            String rtaJson = "MSNRTACONSULTAESTADO|" + objectMapper.writeValueAsString(respuesta.get());
+            return Optional.of(rtaJson);
+        } catch (JsonProcessingException ex) {
+            Logger.getLogger(ConsultaGrupoSemServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return Optional.empty();
+    }
+    
+    public EstadoGrupoSemaforicoEnum getEstadoSemaforico(){
+        EstadoGrupoSemaforicoEnum estado = null;
+        int numConexiones = getConexionesActivas();
             if (numConexiones == 0) {
                 estado = EstadoGrupoSemaforicoEnum.ESPERA_CONEXIONES;
             }
@@ -50,17 +65,7 @@ public class ConsultaGrupoSemServiceImpl implements ConsultaGrupoSemService {
                     estado = EstadoGrupoSemaforicoEnum.CONEXIONES_COMPLETAS;
                 }
             }
-            Optional<MensajeBrokerDto> respuesta = Optional.of( MensajeBrokerDto.builder()
-                    .idInterseccion(mensajeBrokerDto.getIdInterseccion())
-                    .idTransaccion(mensajeBrokerDto.getIdTransaccion())
-                    .mensaje(estado.toString())
-                    .build() );
-            String rtaJson = "MSNRTACONSULTAESTADO|" + objectMapper.writeValueAsString(respuesta.get());
-            return Optional.of(rtaJson);
-        } catch (JsonProcessingException ex) {
-            Logger.getLogger(ConsultaGrupoSemServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return Optional.empty();
+       return estado;
     }
     
     private Integer getNumConPlan(){
